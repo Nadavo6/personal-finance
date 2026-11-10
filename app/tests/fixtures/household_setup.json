@@ -1,0 +1,16 @@
+{
+  "_comment": "Invented household setup for the tests (see examples/personal_setup.example.json).",
+  "categories": [
+    {"name": "Renovation", "name_he": "שיפוץ", "kind": "variable", "color": "#ad1457", "one_off": true}
+  ],
+  "rules": [
+    {"pattern": "שיק", "account_kind": "bank", "direction": "out", "amount_min": 5000, "amount_max": 8000, "category": "Home rent"},
+    {"pattern": "הוראת קבע", "account_kind": "bank", "direction": "in", "amount_min": 2500, "amount_max": 4000, "category": "Home rent"},
+    {"pattern": "הלוואת משכנתא", "account_kind": "bank", "category": "Mortgage"},
+    {"pattern": "מכללת", "category": "Education"},
+    {"pattern": "העברה דיגיטל", "account_kind": "bank", "direction": "out", "amount_min": 12000, "category": "Savings & investments"},
+    {"pattern": "העברה דיגיטל", "account_kind": "bank", "direction": "in", "amount_min": 6000, "amount_max": 16000, "category": "Rental income"},
+    {"pattern": "ברוקר דוגמה", "category": "Savings & investments"}
+  ],
+  "settings": {}
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# ./finance                      -> serve on 127.0.0.1:8747 and open the browser
+# ./finance serve [--port N]     -> serve (no browser unless --open)
+# ./finance import <file>... | import-inbox | import-sheet [snapshot.json] | sync [--providers leumi,max] | backup | export-csv [--out f] | recategorize | tag-event --category C --from D --to D
+#                 | apply-setup [file] | export-setup [--out f]
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+APP="$ROOT/app"
+# stay in the caller's directory so relative file paths work
+run() { PYTHONPATH="$APP${PYTHONPATH:+:$PYTHONPATH}" exec uv run --quiet --project "$APP" python -m finapp "$@"; }
+
+if [[ $# -eq 0 ]]; then
+  run serve --open
+else
+  run "$@"
+fi

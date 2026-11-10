@@ -1,0 +1,32 @@
+{
+  "_comment": [
+    "Copy to data/personal_setup.json (gitignored) and edit. Every value here is invented.",
+    "Apply with ./finance apply-setup; a brand-new database applies it automatically.",
+    "categories: added by name, or update the listed fields of an existing category.",
+    "  kind: income | fixed | variable | tracking | savings | transfer; one_off: true keeps the rows",
+    "  visible but out of monthly totals (use ./finance tag-event to tag an event's inflows).",
+    "rules: pattern + match_type (contains | equals | regex) on the normalized merchant;",
+    "  optional account_kind (bank | card | gift), direction (in | out), amount_min / amount_max",
+    "  (bounds on the absolute amount), category, set_transfer, set_excluded, priority.",
+    "settings: filled only while unset; ./finance apply-setup --overwrite-settings replaces them."
+  ],
+  "categories": [
+    {"name": "Renovation", "name_he": "שיפוץ", "kind": "variable", "color": "#ad1457", "one_off": true},
+    {"name": "Kids", "name_he": "ילדים", "kind": "variable", "color": "#ff8a65"},
+    {"name": "Dining out", "monthly_budget": 900}
+  ],
+  "rules": [
+    {"pattern": "שיק", "account_kind": "bank", "direction": "out", "amount_min": 4000, "amount_max": 4800, "category": "Home rent"},
+    {"pattern": "הוראת קבע", "account_kind": "bank", "direction": "in", "amount_min": 1800, "amount_max": 2200, "category": "Home rent"},
+    {"pattern": "בנק המשכנתאות לדוגמה", "account_kind": "bank", "category": "Mortgage"},
+    {"pattern": "המכללה לדוגמה", "category": "Education"},
+    {"pattern": "בית השקעות לדוגמה", "category": "Savings & investments"},
+    {"pattern": "העברה דיגיטל", "account_kind": "bank", "direction": "in", "amount_min": 3000, "amount_max": 5000, "category": "Rental income"},
+    {"pattern": "גן ילדים", "category": "Kids"}
+  ],
+  "settings": {
+    "salary_net_baseline": "12500",
+    "cashflow_start_day": "10",
+    "count_variable_income_in_forecast": "false"
+  }
+}

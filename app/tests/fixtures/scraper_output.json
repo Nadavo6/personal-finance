@@ -1,0 +1,94 @@
+[
+ {
+  "provider": "max",
+  "ok": true,
+  "error": null,
+  "errorType": null,
+  "accounts": [
+   {
+    "accountNumber": "1111",
+    "balance": null,
+    "txns": [
+     {
+      "type": "normal",
+      "identifier": 5551,
+      "date": "2026-10-02T21:00:00.000Z",
+      "processedDate": "2026-11-09T22:00:00.000Z",
+      "originalAmount": -100.0,
+      "originalCurrency": "ILS",
+      "chargedAmount": -100.0,
+      "description": "סופר השכונה",
+      "memo": "",
+      "status": "completed"
+     },
+     {
+      "type": "installments",
+      "identifier": 5552,
+      "date": "2026-09-05T21:00:00.000Z",
+      "processedDate": "2026-11-09T22:00:00.000Z",
+      "originalAmount": -900.0,
+      "originalCurrency": "ILS",
+      "chargedAmount": -300.0,
+      "description": "חנות רהיטים",
+      "installments": {
+       "number": 2,
+       "total": 3
+      },
+      "status": "completed"
+     },
+     {
+      "type": "normal",
+      "date": "2026-10-04T21:00:00.000Z",
+      "processedDate": "2026-11-09T22:00:00.000Z",
+      "originalAmount": -20.0,
+      "originalCurrency": "USD",
+      "chargedAmount": -74.5,
+      "description": "APP STORE",
+      "status": "completed"
+     },
+     {
+      "type": "normal",
+      "date": "2026-11-08T22:00:00.000Z",
+      "processedDate": "2026-12-09T22:00:00.000Z",
+      "originalAmount": -55.0,
+      "originalCurrency": "ILS",
+      "chargedAmount": 0,
+      "description": "קפה פינתי",
+      "status": "pending"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "provider": "leumi",
+  "ok": true,
+  "error": null,
+  "accounts": [
+   {
+    "accountNumber": "999-11112222",
+    "balance": 1234.5,
+    "txns": [
+     {
+      "type": "normal",
+      "identifier": "777",
+      "date": "2026-11-01T00:00:00.000+02:00",
+      "processedDate": "2026-11-01T00:00:00.000+02:00",
+      "originalAmount": 15000,
+      "originalCurrency": "ILS",
+      "chargedAmount": 15000,
+      "description": "העברת משכורת",
+      "status": "completed"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "provider": "visaCal",
+  "ok": false,
+  "error": "INVALID_PASSWORD: bad login",
+  "errorType": "INVALID_PASSWORD",
+  "accounts": []
+ }
+]

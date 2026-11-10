@@ -1,0 +1,21 @@
+# personal data - never committed (includes data/personal_setup.json)
+data/
+docs/riseup_data_profile.md
+*.db
+*.db-*
+*.pdf
+*.xlsx
+*.xls
+*.csv
+!app/tests/fixtures/*.csv
+!app/tests/fixtures/*.xlsx
+!app/tests/fixtures/*.xls
+# tooling
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+.DS_Store
+docs/progress/
+# agent working notes (local only)
+docs/tasks/

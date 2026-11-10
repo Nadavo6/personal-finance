@@ -1,0 +1,36 @@
+{
+  "source": "Example net-worth sheet (every value is invented)",
+  "sheet_last_updated": "2026-10-31",
+  "assets": [
+    {"key": "checking", "name": "Bank checking (עובר ושב)", "kind": "cash", "value": 15000, "as_of": "2026-10-31", "track_from_bank": true},
+    {"key": "broker", "name": "Brokerage account (תיק השקעות)", "kind": "investment", "value": 95000, "as_of": "2026-10-31",
+     "breakdown": [{"name": "Index funds (מחקות מדד)", "value": 70000}, {"name": "Money market (כספית)", "value": 25000}]},
+    {"key": "pension", "name": "Pension fund (קרן פנסיה)", "kind": "pension", "value": 120000, "as_of": "2026-10-31"},
+    {"key": "study", "name": "Study fund (קרן השתלמות)", "kind": "study_fund", "value": 48000, "as_of": "2026-10-31"},
+    {"key": "flat_equity", "name": "Flat — my equity", "kind": "property_equity", "value": 300000, "as_of": "2026-10-31"}
+  ],
+  "property": {
+    "name": "Example St 1",
+    "asking_price_incl_renovation": 1400000,
+    "bank_financed_pct": 70,
+    "mortgage_approved": 980000,
+    "purchase_costs": [{"item": "Purchase tax", "amount": 7000, "note": ""}, {"item": "Lawyer", "amount": 5000, "note": ""}],
+    "total_purchase_and_renovation_costs": 432000,
+    "contributions": {"me": 300000, "family": 132000},
+    "rental_income": [{"month": "2026-09", "amount": 5200}, {"month": "2027-09", "amount": 5400}],
+    "rental_tax_note": "10% track on rental income",
+    "insurance_monthly": 90
+  },
+  "fixed_monthly": [
+    {"name": "Mortgage - example bank", "amount": 4700, "note": ""},
+    {"name": "Flat insurance", "amount": 90, "note": ""}
+  ],
+  "future_income": [{"when": "2027-03", "amount": 4000, "source": "Annual bonus"}],
+  "future_expenses": [
+    {"when": "2027-01-15", "amount": 2500, "what": "Annual rental tax"},
+    {"when": null, "amount": 8000, "what": "New laptop"}
+  ],
+  "equity_comp": [{"vests": "2027-06", "qty": 500, "type": "options", "source": "joining grant"}],
+  "tasks": [{"title": "Compare car insurance quotes", "est_monthly_saving": 40, "notes": ""}],
+  "freebies": [{"name": "Holiday gift card", "source": "work", "value": 500, "unit": "ILS", "notes": "expires next year"}]
+}

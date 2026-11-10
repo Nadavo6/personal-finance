@@ -1,0 +1,18 @@
+{
+  "name": "finapp-sync",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Live sync for the local finance app: israeli-bank-scrapers with credentials from the macOS Keychain",
+  "type": "module",
+  "main": "scrape.mjs",
+  "scripts": {
+    "scrape": "node scrape.mjs",
+    "check": "node --check scrape.mjs"
+  },
+  "engines": {
+    "node": ">=22.22.2"
+  },
+  "dependencies": {
+    "israeli-bank-scrapers": "6.13.0"
+  }
+}
