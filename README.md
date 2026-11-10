@@ -13,6 +13,17 @@ a Python server and a browser UI. Your data stays in one gitignored folder, and 
 
 <sub>Screenshots use the built-in mock data (`?mock=1`). Every name and number in them is invented.</sub>
 
+<details>
+<summary><b>In real use</b> — a year and a half of real bank + card data, with every amount, date and merchant blurred</summary>
+
+| Month | Net worth |
+|---|---|
+| ![Month, real data blurred](docs/screenshots/real-use/01-month.png) | ![Net worth, real data blurred](docs/screenshots/real-use/02-net-worth.png) |
+| **Transactions** | **Review** |
+| ![Transactions, real data blurred](docs/screenshots/real-use/03-transactions.png) | ![Review, real data blurred](docs/screenshots/real-use/04-review.png) |
+
+</details>
+
 ## Features
 
 - **Import** Leumi (PDF / Excel), Max and Cal (xlsx), RiseUp history (CSV) and any CSV with date / description /
